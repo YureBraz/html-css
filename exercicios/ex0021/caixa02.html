@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightblue;
+            margin: 0px;
+        }
+
+        header {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 10px;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+        nav {
+            background-color: rgb(151, 187, 199);
+            text-align: center;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+        }
+
+        nav > a {
+            text-decoration: none;
+            padding-right: 40px;
+            
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: rgb(252, 10, 159);
+        }
+
+        article {
+            background-color: rgb(151, 187, 199);
+            padding: 5px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+        }
+
+        article > aside {
+            background-color: rgb(121, 153, 163);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.438);
+        }
+
+        p > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p > a:hover {
+            text-decoration: underline;
+            color: rgb(252, 10, 159);
+        }
+
+        footer  {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+        }
+        
+
+        footer > p {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://twitch.tv" target="_blank">twitch</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique maxime placeat ratione nulla deleniti veniam hic inventore voluptatum assumenda. Quisquam consectetur aut nostrum qui unde veritatis quaerat et dolore doloribus!</p>
+                <aside>
+                    <p>Artigo escrito por <a href="https://www.instagram.com/yurebraz/" target="_blank">José da Silva</a></p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>
