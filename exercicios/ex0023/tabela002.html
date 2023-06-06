@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,11 +21,22 @@
             padding: 5px;
         }
 
+        .pop {
+            width: 120px;
+        }
+
+
         caption {
             font-size: 1.3em;
             font-weight: bold;
             padding: 8px;
             background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
 
         thead, tfoot {
@@ -60,7 +72,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col">População</th>
+                <th scope="col" class="pop">População</th>
             </tr>
         </thead>
         <tbody>
